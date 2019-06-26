@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+    {% extends "basic_app/base.html" %}
+        
+        {% block body_block %}
+            <h1>Welcome to index</h1>
+            <h2>This is index.html page showing!</h2>
+            <!-- When trying to delete one part of the text being displayed on the index file, make sure that the word being deleted matches the string being displayed by text -->
+            <h1>{{ text|cut:'world' }}</h1>
+            <h2>{{ number|add:"23" }}</h2>
+        {% endblock %}
